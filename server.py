@@ -39,7 +39,7 @@ def serverKeepAlive():
     global serverState
     
     while serverState==True:
-        sleep(10)
+        sleep(60)
         for client in clientsOnline:
             retries=0
             keepAliveSuccess=False
